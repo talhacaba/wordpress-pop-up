@@ -1,0 +1,108 @@
+.mpu-admin-wrap {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.mpu-admin-wrap #postbox-container-1,
+.mpu-admin-wrap #post-body-content {
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.mpu-admin-wrap .postbox {
+    margin-bottom: 20px;
+}
+
+.mpu-admin-wrap .postbox .hndle {
+    font-size: 16px;
+}
+
+.mpu-admin-wrap .inside {
+    padding: 20px;
+}
+
+.mpu-admin-wrap .form-table th {
+    font-weight: 600;
+}
+
+.mpu-admin-wrap .form-table input[type="text"],
+.mpu-admin-wrap .form-table textarea {
+    width: 100%;
+}
+
+#mpu-live-preview-container {
+    padding: 20px;
+    background-color: #f0f0f1;
+    border: 1px dashed #c3c4c7;
+    border-radius: 8px;
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mpu-preview-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+#mpu-preview-content .mpu-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#mpu-preview-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
